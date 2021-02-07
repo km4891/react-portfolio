@@ -1,8 +1,24 @@
 import React from 'react';
 
-function Nav() {
+function Nav(props) {
+    const { sections, currentSection, setCurrentSection, projects } = props;
     return (
-        <nav></nav>
+        <nav>
+            <ul className="flex-row">
+                {sections.map((section) => (
+                    <li className={`mx-1 ${currentSection.name === section + " "
+                }`}
+                key={section.name}>
+                    <a onClick={() => {
+                        setCurrentSection(section);
+                    }
+                    }
+                    ></a>
+                </li>
+                )
+                )}
+            </ul>
+        </nav>
     );
 }
 
