@@ -2,11 +2,13 @@
 import React from 'react';
 import Nav from '../Nav';
 
-function Header() {
+function Header(props) {
     return (
-        <h1>
-            Kyle Morarity
-        </h1>
+        <Nav
+        sections={props.sections}
+        currentSection={props.currentSection}
+        setCurrentSection={props.setCurrentSection}
+        ></Nav>
         
     )
 }

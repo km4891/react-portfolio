@@ -9,7 +9,16 @@ const projects = [
         image: 'wantings.png',
         applink: 'coming soon',
         github: 'https://github.com/km4891/wantings'
-    }
+    },
+    {
+        id: 1,
+        name: 'Find the Vibe',
+        description: 'Music search engine through Spotify API',
+        image: 'vibe.png',
+        applink: 'coming soon',
+        github: 'https://github.com/km4891/find-the-vibe'
+    },
+    
     ];
     function Portfolio() {
         return <Project projects={projects} />;
