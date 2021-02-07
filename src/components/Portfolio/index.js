@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import Project from '../Project';
+import './index.css';
+
 
 const projects = [
     {
@@ -18,10 +20,17 @@ const projects = [
         applink: 'coming soon',
         github: 'https://github.com/km4891/find-the-vibe'
     },
-    
+
     ];
     function Portfolio() {
-        return <Project projects={projects} />;
+        return (
+        <>
+        <h1>Projects</h1>
+        <div>
+        <Project projects={projects} />
+        </div>
+        </>
+        )
     }
     
     export default Portfolio;

@@ -1,0 +1,16 @@
+img {
+    padding: 20px 10px;
+}
+
+a {
+    color: #cc1717;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #cf4b29ad;
+}
+
+h2 {
+    color: #1f2ac2;
+}
