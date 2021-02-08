@@ -3,9 +3,9 @@ import welder from "../../assets/welder.jpg"
 
 function About() {
     return (
-        <section style={{ margin: "0 auto", padding: "0 50px" }}>
+        <section style={{ margin: "0 auto", padding: "0 50px"  }}>
             <h1 id="about-me">About Me</h1>
-            <div>
+            <div className="welder">
                 <img src={welder} style={{ width: "50%" }} alt="Welder">
 
                 </img>

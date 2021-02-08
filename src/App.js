@@ -1,45 +1,42 @@
-import './App.css';
 import React, { useState } from 'react';
 import About from './components/About';
+import Footer from './components/Footer';
 import Header from './components/Header';
-import Nav from './components/Nav';
-import Footer from "./components/Footer";
-import Portfolio from  "./components/Portfolio";
-import Projects from "./components/Project";
-import Resume from "./components/Resume";
+import Portfolio from './components/Portfolio';
+import Contact from './components/Contact';
+import Resume from './components/Resume'
 
 function App() {
-  const [sections] = useState ([
+  const [sections] = useState([
     {
-      name: "Kyle Morarity",
-      component: About
+      name: 'About Me',
+      component: <About />
     },
     {
-      name: "About Me",
-      component: About
+      name: 'Portfolio',
+      component: <Portfolio />
     },
     {
-      name: "Portfolio",
-      component: Portfolio
+      name: 'Contact',
+      component: <Contact />
     },
     {
-      name: "Resume",
-      component: Resume
-    },
+      name: 'Resume',
+      component: <Resume />
+    }
   ])
 
-  const [currentSection, setCurrentSection] = useState(sections[0])
+  const [currentSection, setCurrentSection] = useState(sections[0]);
+
   return (
-    <div className="flex-row">
+    <div>
       <Header
-      sections={sections}
-      currentSection={currentSection}
-      setCurrentSection={setCurrentSection}>
+        sections={sections}
+        currentSection={currentSection}
+        setCurrentSection={setCurrentSection}>
       </Header>
       <main>
-        <About>
-          {currentSection.component}
-        </About>
+        {currentSection.component}
       </main>
       <Footer></Footer>
     </div>

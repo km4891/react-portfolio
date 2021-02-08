@@ -1,0 +1,10 @@
+footer ul {
+    justify-items: center;
+    justify-content: center;
+}
+
+li {
+    padding: 0px 0px;
+    margin: 0px 0px;
+    justify-content: space-around;
+}

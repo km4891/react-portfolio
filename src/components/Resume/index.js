@@ -5,7 +5,7 @@ function Resume() {
     return (
         
         <div>
-         {/* coming soon */}
+         <p>Coming soon!</p>
         </div>
     )
 }
